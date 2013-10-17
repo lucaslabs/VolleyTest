@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VolleyTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Activity title -->
+    <string name="activity_get_profile_json">GET Profile in JSON format</string>
+    <string name="activity_get_profile_gson">GET Profile using Gson</string>
+    <string name="activity_get_profile_picture">GET Profile picture</string>
+    <string name="activity_post_profile_json">POST Profile in JSON format</string>
+    <string name="activity_dynamic_photos">Picasa photos (Image cache)</string>
+
+    <!-- Buttons -->
+    <string name="btn_get_profile_json">GET Profile (JSONObject)</string>
+    <string name="btn_get_profile_gson">GET Profile (Gson)</string>
+    <string name="btn_get_profile_picture">GET Profile picture</string>
+    <string name="btn_post_profile_json">POST Profile (JSON params)</string>
+    <string name="btn_show_dynamic_photos">Show Picasa photos (Image cache)</string>
+
+    <!-- Profile data -->
+    <string name="profile_id">ID: %s</string>
+    <string name="profile_name">Name: %s</string>
+    <string name="profile_first_name">First name: %s</string>
+    <string name="profile_last_name">Last name: %s</string>
+    <string name="profile_username">Username: %s</string>
+    <string name="profile_gender">Gender: %s</string>
+    <string name="profile_domain">Domain: %s</string>
+
+    <!-- Progress dialog -->
+    <string name="progress_dialog_title">Loading</string>
+    <string name="progress_dialog_message">Please wait.</string>
+
+</resources>

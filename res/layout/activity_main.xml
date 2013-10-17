@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnGetJsonProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_get_profile_json" />
+
+    <Button
+        android:id="@+id/btnGetGsonProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGetJsonProfile"
+        android:text="@string/btn_get_profile_gson" />
+
+    <Button
+        android:id="@+id/btnGetProfilePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGetGsonProfile"
+        android:text="@string/btn_get_profile_picture" />
+    
+     <Button
+        android:id="@+id/btnPostJsonProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGetProfilePicture"
+        android:text="@string/btn_post_profile_json" />
+     
+     <Button
+        android:id="@+id/btnShowDynamicPhotoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPostJsonProfile"
+        android:text="@string/btn_show_dynamic_photos" />
+     
+
+</RelativeLayout>
