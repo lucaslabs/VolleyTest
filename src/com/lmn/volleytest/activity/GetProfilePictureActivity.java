@@ -55,6 +55,7 @@ public class GetProfilePictureActivity extends RequestActivity<FacebookProfile> 
 	 * Executes a request to get the profile picture.
 	 */
 	private void getProfilePicture() {
+		// TODO Set a placeholder image
 		ivPicture.setImageUrl(Constants.Facebook.USER_PICTURE, mImageLoader);
 	}
 

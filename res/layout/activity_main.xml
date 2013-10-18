@@ -21,20 +21,19 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btnGetGsonProfile"
         android:text="@string/btn_get_profile_picture" />
-    
-     <Button
+
+    <Button
         android:id="@+id/btnPostJsonProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnGetProfilePicture"
         android:text="@string/btn_post_profile_json" />
-     
-     <Button
+
+    <Button
         android:id="@+id/btnShowDynamicPhotoList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnPostJsonProfile"
         android:text="@string/btn_show_dynamic_photos" />
-     
 
 </RelativeLayout>

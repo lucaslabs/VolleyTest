@@ -18,6 +18,8 @@ import java.util.List;
 
 /**
  * Adapter of {@link com.lmn.volleytest.model.picasa.PicasaPhoto}s.
+ * <p>
+ * Implements ViewHolder design pattern.
  * 
  * @author Lucas Nobile
  */
@@ -37,6 +39,7 @@ public class PicasaPhotoAdapter extends ArrayAdapter<PicasaPhoto> {
 		PicasaPhotoHolder holder;
 
 		if (view == null) {
+			// Recycle views
 			holder = new PicasaPhotoHolder();
 			view = LayoutInflater.from(getContext()).inflate(
 					R.layout.row_dynamic_list, null);
@@ -76,6 +79,7 @@ public class PicasaPhotoAdapter extends ArrayAdapter<PicasaPhoto> {
 		notifyDataSetChanged();
 	}
 
+	// ViewHolder pattern to use for ListView
 	private class PicasaPhotoHolder {
 		NetworkImageView thumbnail;
 		TextView title;

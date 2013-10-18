@@ -16,6 +16,14 @@ import com.lmn.volleytest.model.picasa.PicasaPhoto;
 import com.lmn.volleytest.model.picasa.PicasaResponse;
 import com.lmn.volleytest.utils.request.GsonRequest;
 
+/**
+ * Executes a request to get photos from Picasa dynammically.
+ * <p>
+ * Implements the "Endless" List UI design pattern :). See
+ * {@link EndlessScrollListener}.
+ * 
+ * @author Lucas Nobile
+ */
 public class DynamicPhotoListActivity extends RequestActivity<PicasaResponse> {
 
 	private static final String TAG = DynamicPhotoListActivity.class
@@ -61,6 +69,7 @@ public class DynamicPhotoListActivity extends RequestActivity<PicasaResponse> {
 		int thumbSize = 160;
 		int startIndex = 1 + mEntries.size();
 
+		// TODO Use Uri.Builder
 		String url = "https://picasaweb.google.com/data/feed/api/all?q="
 				+ photoOf + "&thumbsize=" + thumbSize + "&max-results="
 				+ RESULT_PER_PAGE + "&start-index=" + startIndex + "&alt=json";
@@ -81,10 +90,11 @@ public class DynamicPhotoListActivity extends RequestActivity<PicasaResponse> {
 	public void onErrorResponse(VolleyError error) {
 		Log.d(TAG, "GET error: " + error.getMessage());
 		mProgressDialog.dismiss();
+		mErrorOcurred = true;
 	}
 
 	/**
-	 * Detects when user is close to the end of the current page and starts
+	 * Detects when user is closer to the end of the current page and starts
 	 * loading the next page so the user will not have to wait (that much) for
 	 * the next entries.
 	 */

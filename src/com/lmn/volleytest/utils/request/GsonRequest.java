@@ -14,8 +14,7 @@ import com.google.gson.JsonSyntaxException;
 
 /**
  * Wrapper for {@link com.android.volley.Request} to parse of JSON Object using
- * Gson.
- * 
+ * Gson.  
  * 
  * @author Lucas Nobile
  * @param <T>

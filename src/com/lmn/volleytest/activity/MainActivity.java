@@ -3,6 +3,7 @@ package com.lmn.volleytest.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -31,6 +32,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		Log.d(TAG, "onCreate()");
+		
 		// Get Profile in JSON Object
 		btnGetJsonProfile = (Button) findViewById(R.id.btnGetJsonProfile);
 		btnGetJsonProfile.setOnClickListener(new OnClickListener() {
