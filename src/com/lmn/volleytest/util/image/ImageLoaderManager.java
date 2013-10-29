@@ -1,4 +1,4 @@
-package com.lmn.volleytest.utils.image;
+package com.lmn.volleytest.util.image;
 
 import android.app.ActivityManager;
 import android.content.Context;

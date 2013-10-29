@@ -12,7 +12,7 @@ import com.lmn.volleytest.R;
 import com.lmn.volleytest.VolleyTestApp;
 import com.lmn.volleytest.model.FacebookProfile;
 import com.lmn.volleytest.util.Constants;
-import com.lmn.volleytest.utils.request.GsonRequest;
+import com.lmn.volleytest.util.request.GsonRequest;
 
 /**
  * Activity that executes a request to get user profile and picture using Gson

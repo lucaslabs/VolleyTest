@@ -14,7 +14,7 @@ import com.lmn.volleytest.VolleyTestApp;
 import com.lmn.volleytest.adapter.PicasaPhotoAdapter;
 import com.lmn.volleytest.model.picasa.PicasaPhoto;
 import com.lmn.volleytest.model.picasa.PicasaResponse;
-import com.lmn.volleytest.utils.request.GsonRequest;
+import com.lmn.volleytest.util.request.GsonRequest;
 
 /**
  * Executes a request to get photos from Picasa dynammically.

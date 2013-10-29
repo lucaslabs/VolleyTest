@@ -1,4 +1,4 @@
-package com.lmn.volleytest.utils.request;
+package com.lmn.volleytest.util.request;
 
 import java.io.UnsupportedEncodingException;
 

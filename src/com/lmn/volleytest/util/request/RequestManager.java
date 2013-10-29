@@ -1,4 +1,4 @@
-package com.lmn.volleytest.utils.request;
+package com.lmn.volleytest.util.request;
 
 import android.content.Context;
 import android.text.TextUtils;

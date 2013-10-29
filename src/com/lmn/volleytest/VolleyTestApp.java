@@ -2,8 +2,8 @@ package com.lmn.volleytest;
 
 import android.app.Application;
 
-import com.lmn.volleytest.utils.image.ImageLoaderManager;
-import com.lmn.volleytest.utils.request.RequestManager;
+import com.lmn.volleytest.util.image.ImageLoaderManager;
+import com.lmn.volleytest.util.request.RequestManager;
 
 /**
  * Main entry point of the app.
