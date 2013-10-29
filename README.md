@@ -4,6 +4,7 @@ VolleyTest
 Android app to test Volley capabilities to do networking.
 
 Features of this app:
+
 1. Show a simple architecture to do networking for Android.
 2. Use StringRequest and JsonObjectRequest to perform GET user profile data and picture from Facebook.
 3. Use StringRequest to POST data in JSON format to the [httpbin service](http://www.httpbin.org)
