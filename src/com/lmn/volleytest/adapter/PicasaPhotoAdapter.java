@@ -68,15 +68,21 @@ public class PicasaPhotoAdapter extends ArrayAdapter<PicasaPhoto> {
 	}
 
 	public void addFeeds(PicasaResponse response) {
-		for (Entry e : response.getFeed().getEntries()) {
-			String title = e.getMediaGroup().getMediaGroupCredits().get(0)
-					.getTitle();
-			String thumbnailUrl = e.getMediaGroup().getMediaGroupContents()
-					.get(0).getUrl();
-			PicasaPhoto picasaEntry = new PicasaPhoto(title, thumbnailUrl);
-			mEntries.add(picasaEntry);
+		if (response != null) {
+			for (Entry e : response.getFeed().getEntries()) {
+				String title = e.getMediaGroup().getMediaGroupCredits().get(0)
+						.getTitle();
+				String thumbnailUrl = e.getMediaGroup().getMediaGroupContents()
+						.get(0).getUrl();
+				PicasaPhoto picasaEntry = new PicasaPhoto(title, thumbnailUrl);
+				mEntries.add(picasaEntry);
+			}
+			notifyDataSetChanged();
 		}
-		notifyDataSetChanged();
+	}
+	
+	public void scrollToPosition(int position){
+		this.scrollToPosition(position);
 	}
 
 	// ViewHolder pattern to use for ListView

@@ -44,7 +44,7 @@ public class GetGsonProfileActivity extends RequestActivity<FacebookProfile> {
 	}
 
 	@Override
-	protected Request<?> createRequest() {
+	protected Request<FacebookProfile> createRequest() {
 		GsonRequest<FacebookProfile> request = new GsonRequest<FacebookProfile>(
 				Request.Method.GET, Constants.Facebook.USER_PROFILE,
 				FacebookProfile.class, this, this);

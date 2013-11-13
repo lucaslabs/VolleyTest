@@ -40,4 +40,14 @@ public class Constants {
 		public static final String GENDER = "gender";
 		public static final String DOMAIN = "domain";
 	}
+
+	/**
+	 * Constants values to schedule an update.
+	 */
+	public interface ScheduleUpdate {
+		public static final long INTERVAL = 30000L; // Use
+													// AlarmManager.INTERVAL_FIFTEEN_MINUTES;
+		public static final long TRIGGER_AT_TIME = System.currentTimeMillis()
+				+ INTERVAL;
+	}
 }
